@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="894dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="226dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/fredokaone"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="#fff"
+                android:textSize="26sp" />
+
+            <ImageButton
+                android:id="@+id/btninfor"
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:paddingRight="15dp"
+                app:srcCompat="@drawable/bell" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/fraunces_medium"
+            android:gravity="center"
+            android:text="Nguyễn Duy Đức"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="100dp"
+                        android:layout_height="39dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fredokaone"
+                        android:paddingLeft="30dp"
+                        android:text="Information"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblid"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fredokaone"
+                        android:text="Wallet ID :"
+                        android:textColor="#d7ffb8"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtid"
+                        android:layout_width="59dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbg"
+                        android:backgroundTintMode="add"
+                        android:gravity="center"
+                        android:text="1014264864"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblemail"
+                        android:layout_width="132dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fredokaone"
+                        android:text="Email :"
+                        android:textColor="#d7ffb8"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbg"
+                        android:backgroundTintMode="add"
+                        android:gravity="center"
+                        android:text="duc20021118@gmail.com"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblphone"
+                        android:layout_width="34dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fredokaone"
+                        android:text="Phone number :"
+                        android:textColor="#d7ffb8"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtphone"
+                        android:layout_width="83dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textbg"
+                        android:backgroundTintMode="add"
+                        android:gravity="center"
+                        android:text="1014264864"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredokaone"
+                    android:paddingLeft="25dp"
+                    android:text="Setting"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:columnOrderPreserved="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:rowCount="2"
+                    android:rowOrderPreserved="false">
+
+                    <Button
+                        android:id="@+id/btncp"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#39212121"
+                        android:drawableTop="@drawable/key_fill"
+                        android:text="Change Password"
+                        android:textAllCaps="false"
+                        android:textSize="14sp"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btnce"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#39212121"
+                        android:drawableTop="@drawable/envelope_at_fill"
+                        android:text="Change Email"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btnsl"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#39212121"
+                        android:drawableTop="@drawable/u_ruler"
+                        android:text="Set limit"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btnmn"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#39212121"
+                        android:drawableTop="@drawable/shop_window"
+                        android:text="Manage Network"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btnmt"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#39212121"
+                        android:drawableTop="@drawable/bookmark_fill"
+                        android:text="Manege Template"
+                        app:cornerRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/btnfa"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_columnWeight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="#39212121"
+                        android:drawableTop="@drawable/fi_shield"
+                        android:text="Set 2FA"
+                        app:cornerRadius="15dp" />
+                </GridLayout>
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/maincolor"
+                android:fontFamily="@font/fredokaone"
+                android:text="Log out"
+                app:cornerRadius="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/maincolor"
+                android:backgroundTint="@color/maincolor"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageButton
+                    android:id="@+id/btnhome"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/house_door" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnmarket"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/uarrowgrow" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnwallet"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/wallet" />
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnprofile"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00FFFFFF"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:srcCompat="@drawable/person_fill" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

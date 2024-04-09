@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ndyduc Wallet</string>
+    <string name="enter_phone_number">Enter Phone number</string>
+    <string name="enter_password">Enter password</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="retype_password">Retype password</string>
+    <string name="enter_eamil">Enter eamil</string>
+    <string name="enter_email">enter_email</string>
+</resources>

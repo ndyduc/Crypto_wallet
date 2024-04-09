@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái khi switch được bật -->
+    <item android:drawable="@drawable/eye_slash_fill" android:state_checked="true"/>
+    <!-- Trạng thái khi switch được tắt -->
+    <item android:drawable="@drawable/eye_fill" android:state_checked="false"/>
+</selector>
