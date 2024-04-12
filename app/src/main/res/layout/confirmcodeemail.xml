@@ -110,10 +110,11 @@
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/veriffycode"
+                        android:fontFamily="@font/fredokaone"
                         android:gravity="center"
                         android:inputType="number"
                         android:padding="10dp"
-                        android:textColor="#000000"
+                        android:textColor="@color/maincolor"
                         android:textSize="18sp" />
 
                     <EditText
@@ -122,10 +123,11 @@
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/veriffycode"
+                        android:fontFamily="@font/fredokaone"
                         android:gravity="center"
                         android:inputType="number"
                         android:padding="10dp"
-                        android:textColor="#000000"
+                        android:textColor="@color/maincolor"
                         android:textSize="18sp" />
 
                     <EditText
@@ -134,10 +136,11 @@
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/veriffycode"
+                        android:fontFamily="@font/fredokaone"
                         android:gravity="center"
                         android:inputType="number"
                         android:padding="10dp"
-                        android:textColor="#000000"
+                        android:textColor="@color/maincolor"
                         android:textSize="18sp" />
 
                     <EditText
@@ -146,10 +149,11 @@
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/veriffycode"
+                        android:fontFamily="@font/fredokaone"
                         android:gravity="center"
                         android:inputType="number"
                         android:padding="10dp"
-                        android:textColor="#000000"
+                        android:textColor="@color/maincolor"
                         android:textSize="18sp" />
 
                     <EditText
@@ -158,10 +162,11 @@
                         android:layout_height="40dp"
                         android:layout_marginRight="10dp"
                         android:background="@drawable/veriffycode"
+                        android:fontFamily="@font/fredokaone"
                         android:gravity="center"
                         android:inputType="number"
                         android:padding="10dp"
-                        android:textColor="#000000"
+                        android:textColor="@color/maincolor"
                         android:textSize="18sp" />
 
                     <EditText
@@ -169,10 +174,11 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/veriffycode"
+                        android:fontFamily="@font/fredokaone"
                         android:gravity="center"
                         android:inputType="number"
                         android:padding="10dp"
-                        android:textColor="#000000"
+                        android:textColor="@color/maincolor"
                         android:textSize="18sp" />
                 </LinearLayout>
 
@@ -211,6 +217,7 @@
                     android:backgroundTint="#7E9E64"
                     android:fontFamily="@font/fredokaone"
                     android:text="Confirm"
+                    android:textColor="@color/white"
                     app:cornerRadius="50dp" />
             </LinearLayout>
         </ScrollView>

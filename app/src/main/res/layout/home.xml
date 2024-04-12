@@ -138,7 +138,7 @@
                                 android:textSize="26sp" />
 
                             <ImageButton
-                                android:id="@+id/imageButton"
+                                android:id="@+id/btnwli"
                                 android:layout_width="0dp"
                                 android:layout_height="40dp"
                                 android:layout_weight="1"
@@ -221,9 +221,10 @@
                             android:layout_height="match_parent"
                             android:layout_marginEnd="5dp"
                             android:backgroundTint="#39212121"
-                            android:drawableTop="@drawable/key_fill"
+                            android:drawableTop="@drawable/u_exchange_alt"
                             android:text="Transation"
                             android:textAllCaps="false"
+                            android:textColor="@color/white"
                             android:textSize="14sp"
                             app:cornerRadius="15dp" />
 
@@ -233,9 +234,10 @@
                             android:layout_height="match_parent"
                             android:layout_marginEnd="5dp"
                             android:backgroundTint="#39212121"
-                            android:drawableTop="@drawable/plus_circle_fill"
+                            android:drawableTop="@drawable/u_process"
                             android:text="Exchange"
                             android:textAllCaps="false"
+                            android:textColor="@color/white"
                             app:cornerRadius="15dp" />
 
                     </LinearLayout>
@@ -278,10 +280,11 @@
                             android:drawableTop="@drawable/fi_plus_circle"
                             android:text="Add Network"
                             android:textAllCaps="false"
+                            android:textColor="@color/white"
                             app:cornerRadius="15dp" />
 
                         <Button
-                            android:id="@+id/btncp"
+                            android:id="@+id/btnwithdrawal"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="5dp"
@@ -289,11 +292,12 @@
                             android:drawableTop="@drawable/u_download_alt"
                             android:text="Withdrawal"
                             android:textAllCaps="false"
+                            android:textColor="@color/white"
                             android:textSize="14sp"
                             app:cornerRadius="15dp" />
 
                         <Button
-                            android:id="@+id/btnsl"
+                            android:id="@+id/btnhistory"
                             android:layout_width="120dp"
                             android:layout_height="match_parent"
                             android:layout_marginEnd="5dp"
@@ -301,6 +305,7 @@
                             android:drawableTop="@drawable/clock_history"
                             android:text="Transfer history"
                             android:textAllCaps="false"
+                            android:textColor="@color/white"
                             app:cornerRadius="15dp" />
 
                     </LinearLayout>
@@ -327,14 +332,15 @@
 
                     <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="265dp">
+                        android:layout_height="265dp"
+                        android:background="@drawable/textbg">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:orientation="vertical">
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"

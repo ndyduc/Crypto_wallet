@@ -39,6 +39,17 @@
         <activity android:name=".Code"
             android:exported="false" />
 
+        <activity android:name=".Changepass"
+            android:exported="false" />
+
+        <activity android:name=".Transfer"
+            android:exported="false" />
+
+        <activity android:name=".Market"
+            android:exported="false" />
+
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

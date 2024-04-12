@@ -2,19 +2,21 @@ package com.example.ndyducwallet;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Switch;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Login_Activity extends AppCompatActivity {
     private Button btnlogin,btnsignup;
     private ImageButton btnback;
-    private Switch eye;
-    private EditText loginpass,txtphone;
+    private ImageView eye;
+    private EditText txtpass,txtphone;
+    private boolean switchState = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +28,11 @@ public class Login_Activity extends AppCompatActivity {
 
     public void init() {
         btnlogin = findViewById(R.id.btnconfirm);
-        loginpass = findViewById(R.id.txtopw);
         btnsignup = findViewById(R.id.btnsignup);
         btnback = findViewById(R.id.btnback);
-        loginpass = findViewById(R.id.txtpassword);
         txtphone = findViewById(R.id.txtphone);
-        eye = findViewById(R.id.eyeswitch1);
+        txtpass = findViewById(R.id.txtnpass1);
+        eye = findViewById(R.id.eyeswitch);
     }
 
     public void events() {
@@ -54,8 +55,16 @@ public class Login_Activity extends AppCompatActivity {
         eye.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                switchState = !switchState;
+                if (switchState) {
+                    eye.setImageResource(R.drawable.eye_slash_fill);
+                    txtpass.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                } else {
+                    eye.setImageResource(R.drawable.eye_fill);
+                    txtpass.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
             }
         });
     }
+
 }

@@ -236,7 +236,7 @@
                     android:rowOrderPreserved="false">
 
                     <Button
-                        android:id="@+id/btncp"
+                        android:id="@+id/btnwithdrawal"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:layout_columnWeight="1"
@@ -245,6 +245,7 @@
                         android:drawableTop="@drawable/key_fill"
                         android:text="Change Password"
                         android:textAllCaps="false"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         app:cornerRadius="15dp" />
 
@@ -257,10 +258,11 @@
                         android:backgroundTint="#39212121"
                         android:drawableTop="@drawable/envelope_at_fill"
                         android:text="Change Email"
+                        android:textColor="@color/white"
                         app:cornerRadius="15dp" />
 
                     <Button
-                        android:id="@+id/btnsl"
+                        android:id="@+id/btnhistory"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:layout_columnWeight="1"
@@ -268,7 +270,8 @@
                         android:layout_marginEnd="5dp"
                         android:backgroundTint="#39212121"
                         android:drawableTop="@drawable/u_ruler"
-                        android:text="Set limit"
+                        android:text="Limit"
+                        android:textColor="@color/white"
                         app:cornerRadius="15dp" />
 
                     <Button
@@ -280,6 +283,7 @@
                         android:backgroundTint="#39212121"
                         android:drawableTop="@drawable/shop_window"
                         android:text="Manage Network"
+                        android:textColor="@color/white"
                         app:cornerRadius="15dp" />
 
                     <Button
@@ -291,10 +295,11 @@
                         android:backgroundTint="#39212121"
                         android:drawableTop="@drawable/bookmark_fill"
                         android:text="Manege Template"
+                        android:textColor="@color/white"
                         app:cornerRadius="15dp" />
 
                     <Button
-                        android:id="@+id/btnfa"
+                        android:id="@+id/btnadd"
                         android:layout_width="0dp"
                         android:layout_height="90dp"
                         android:layout_columnWeight="1"
@@ -302,7 +307,8 @@
                         android:layout_marginEnd="5dp"
                         android:backgroundTint="#39212121"
                         android:drawableTop="@drawable/fi_shield"
-                        android:text="Set 2FA"
+                        android:text="2FA"
+                        android:textColor="@color/white"
                         app:cornerRadius="15dp" />
                 </GridLayout>
 
@@ -318,7 +324,7 @@
             android:layout_alignParentBottom="true" >
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/btnlogout"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginLeft="80dp"
@@ -328,6 +334,7 @@
                 android:backgroundTint="@color/maincolor"
                 android:fontFamily="@font/fredokaone"
                 android:text="Log out"
+                android:textColor="@color/white"
                 app:cornerRadius="30dp" />
 
             <LinearLayout
@@ -398,3 +405,4 @@
         </LinearLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+

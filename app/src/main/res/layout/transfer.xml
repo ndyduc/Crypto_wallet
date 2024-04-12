@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnback"
+                        android:layout_width="91dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/Back"
+                        app:srcCompat="@drawable/backpage" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="194dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fredokaone"
+                        android:gravity="center"
+                        android:text="Transfer"
+                        android:textColor="#fff"
+                        android:textSize="26sp" />
+
+                    <ImageButton
+                        android:id="@+id/btninfor"
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00FFFFFF"
+                        android:contentDescription="@string/Information"
+                        android:paddingRight="15dp"
+                        app:srcCompat="@drawable/bell" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/credit_card_2_back" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="295dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Sender information"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="#262233"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnnwo"
+                        android:layout_width="378dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/obg"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/network"
+                            android:layout_width="282dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#262233"
+                            android:gravity="center_vertical|start"
+                            android:paddingStart="16dp"
+                            android:text="Choose network"
+                            android:textColor="@color/white"
+                            app:cornerRadius="30dp" />
+
+                        <!-- Image -->
+                        <ImageView
+                            android:id="@+id/inet"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/up_circle" /> <!-- Thay your_image bằng tên hình ảnh của bạn -->
+                    </LinearLayout>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/networkop"
+                        android:layout_width="match_parent"
+                        android:layout_height="245dp"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <GridLayout
+                                android:layout_width="378dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:alignmentMode="alignMargins"
+                                android:columnCount="4"
+                                android:columnOrderPreserved="false"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:rowOrderPreserved="false">
+
+                                <Button
+                                    android:id="@+id/btnadd"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/ambire"
+                                    android:text="Eth"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnwithdrawal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/binance"
+                                    android:text="Ply"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnn3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/brave"
+                                    android:text="Bsc"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnce"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/coinbase"
+                                    android:text="Ava"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnhistory"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/metamask"
+                                    android:text="Ast"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnmn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/phantom"
+                                    android:text="Opt"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnmn1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/sollet"
+                                    android:text="Opt"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnn7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/safepal"
+                                    android:text="Sol"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+
+                                <Button
+                                    android:id="@+id/btnn8"
+                                    android:layout_width="0dp"
+                                    android:layout_height="95dp"
+                                    android:layout_columnWeight="1"
+                                    android:layout_marginEnd="20dp"
+                                    android:backgroundTint="#39212121"
+                                    android:drawableTop="@drawable/add_logo"
+                                    android:text="Add"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    app:cornerRadius="15dp"
+                                    tools:backgroundTint="#262233" />
+                            </GridLayout>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="#262233"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/btntko"
+                        android:layout_width="378dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/obg"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/network2"
+                            android:layout_width="282dp"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#262233"
+                            android:gravity="center_vertical|start"
+                            android:paddingStart="16dp"
+                            android:text="Choose token"
+                            android:textColor="@color/white"
+                            app:cornerRadius="30dp" />
+
+                        <ImageView
+                            android:id="@+id/itok"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/down_circle" /> <!-- Thay your_image bằng tên hình ảnh của bạn -->
+                    </LinearLayout>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/tokenop"
+                        android:layout_width="match_parent"
+                        android:layout_height="176dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <GridLayout
+                                android:layout_width="378dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:columnCount="3"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="6dp">
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="118dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="7dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="49dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/textView401"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="20dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="231.3465"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </GridLayout>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/fi_user" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="105dp"
+                        android:layout_height="54dp"
+                        android:layout_weight="1"
+                        android:text="Beneficiary information"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="69dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/fredokaone"
+                            android:gravity="right|center_vertical"
+                            android:text="Template"
+                            android:textColor="@color/maincolor"
+                            android:textSize="22sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/u_bookmark" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/btnwl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/transferbg"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:text="Beneficiary wallet/network"
+                            android:textColor="#cb000000"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnwli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/u_angle_down"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </RelativeLayout>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/wlop"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:fillViewport="true"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <GridLayout
+                                android:layout_width="378dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:alignmentMode="alignMargins"
+                                android:columnCount="2"
+                                android:columnOrderPreserved="false"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:rowOrderPreserved="false">
+
+
+                                <LinearLayout
+                                    android:layout_width="160dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="14dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="63dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="82dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="160dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="14dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="63dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="82dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="160dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="14dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="63dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <TextView
+                                        android:layout_width="82dp"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:paddingLeft="15dp"
+                                        android:text="Bitcoin"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="160dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="14dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="63dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="82dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="160dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginEnd="14dp"
+                                    android:layout_marginBottom="7dp"
+                                    android:background="@drawable/tokentransfer"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView101"
+                                        android:layout_width="63dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/life"
+                                        tools:ignore="DuplicateIds" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="82dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="15dp"
+                                            android:text="Bitcoin"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </GridLayout>
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+                    <EditText
+                        android:id="@+id/editTextText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/transferbg"
+                        android:ems="10"
+                        android:hint="Enter wallet address"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="#80000000"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="4dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/transaction" />
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="205dp"
+                            android:layout_height="54dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="Transaction information"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/txtamout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/transferbg"
+                        android:ems="10"
+                        android:hint="@string/amount"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="#cb000000"
+                        android:textColorHint="#80000000"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/txtmess"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/transferbg"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:text="Nguyen Duy Duc transfer"
+                            android:textColor="@color/maincolor"
+                            android:textSize="18sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnmess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="32dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/pencil"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnlogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/maincolor"
+                    android:fontFamily="@font/fredokaone"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    app:cornerRadius="30dp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

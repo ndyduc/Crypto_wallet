@@ -183,6 +183,7 @@
                     android:backgroundTint="#7E9E64"
                     android:fontFamily="@font/fredokaone"
                     android:text="Confirm"
+                    android:textColor="@color/white"
                     app:cornerRadius="50dp" />
             </LinearLayout>
         </ScrollView>

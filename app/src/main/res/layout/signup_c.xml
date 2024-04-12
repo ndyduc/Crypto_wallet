@@ -104,7 +104,8 @@
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
                             android:hint="Enter yours name"
-                            android:inputType="textCapWords" />
+                            android:inputType="textCapWords"
+                            android:paddingLeft="15dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -132,7 +133,8 @@
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
                             android:hint="@string/enter_phone_number"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:paddingLeft="15dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -159,8 +161,9 @@
                             android:layout_marginRight="40dp"
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
-                            android:hint="@string/enter_email"
-                            android:inputType="textEmailAddress" />
+                            android:hint="@string/Enteremail"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="15dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -185,21 +188,26 @@
                             android:orientation="horizontal">
 
                             <EditText
-                                android:id="@+id/txtpassword"
-                                android:layout_width="275dp"
+                                android:id="@+id/txtnpass1"
+                                android:layout_width="296dp"
                                 android:layout_height="58dp"
                                 android:layout_marginLeft="40dp"
+                                android:backgroundTint="#FFFFFF"
                                 android:ems="10"
                                 android:hint="@string/enter_your_password"
                                 android:inputType="textPassword"
+                                android:paddingLeft="15dp"
                                 android:textColor="@color/white" />
 
-                            <Switch
+                            <ImageView
                                 android:id="@+id/eyeswitch1"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="40dp"
-                                android:thumb="@drawable/eyeswitch" />
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:clickable="true"
+                                android:onClick="toggleSwitchState"
+                                android:src="@drawable/eye_fill" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -217,7 +225,7 @@
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/forum"
                             android:paddingLeft="50dp"
-                            android:text="Confirmpass"
+                            android:text="Confirm password"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp" />
 
@@ -227,21 +235,26 @@
                             android:orientation="horizontal">
 
                             <EditText
-                                android:id="@+id/confirmpassword"
-                                android:layout_width="275dp"
+                                android:id="@+id/txtrepass"
+                                android:layout_width="296dp"
                                 android:layout_height="58dp"
                                 android:layout_marginLeft="40dp"
                                 android:ems="10"
                                 android:hint="@string/retype_password"
+                                android:backgroundTint="#FFFFFF"
                                 android:inputType="textPassword"
+                                android:paddingLeft="15dp"
                                 android:textColor="@color/white" />
 
-                            <Switch
+                            <ImageView
                                 android:id="@+id/eyeswitch2"
-                                android:layout_width="match_parent"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="40dp"
-                                android:thumb="@drawable/eyeswitch" />
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:clickable="true"
+                                android:onClick="toggleSwitchState"
+                                android:src="@drawable/eye_fill" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -264,6 +277,7 @@
                             android:paddingTop="15dp"
                             android:paddingBottom="15dp"
                             android:text="Register"
+                            android:textColor="@color/white"
                             app:cornerRadius="50dp" />
                     </LinearLayout>
 

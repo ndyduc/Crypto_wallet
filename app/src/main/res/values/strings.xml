@@ -7,4 +7,11 @@
     <string name="retype_password">Retype password</string>
     <string name="enter_eamil">Enter eamil</string>
     <string name="enter_email">enter_email</string>
+    <string name="Enteremail">Enter email</string>
+    <string name="enter_your_present_password">Enter present password</string>
+    <string name="enter_your_new_password">Enter new password</string>
+    <string name="retype_new_password">Retype new password</string>
+    <string name="Back">Back</string>
+    <string name="Information">Information\n</string>
+    <string name="amount">Amount</string>
 </resources>
