@@ -1,12 +1,19 @@
 package com.example.ndyducwallet;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+
 
 public class Home extends AppCompatActivity {
     private ImageButton profile,market,wallet;
@@ -18,8 +25,9 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.home);
         init();
         events();
-    }
 
+        NewsHelper.getNews(this,findViewById(R.id.mum));
+    }
 
     public void init() {
         transfer = findViewById(R.id.btntransfer);
@@ -61,4 +69,6 @@ public class Home extends AppCompatActivity {
             }
         });
     }
+
+
 }
