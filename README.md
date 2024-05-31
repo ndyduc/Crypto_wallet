@@ -25,11 +25,20 @@ Tools: ​Client-side App: Java Android
 ​API: Kraken, Coindesk.
 
 ! : this app is non-realatics, It get your own coins from kraken then add to database(unvalue) there nothing u can do in reality, you need web service as a backend to run it.
-![Picture1](https://github.com/ndyduc/Crypto_wallet/assets/121474243/b20bce7a-9ee2-4f2a-a5ec-458424f4269c)
-![Picture2](https://github.com/ndyduc/Crypto_wallet/assets/121474243/7f05ebe3-c433-4bbf-a1ba-8641ddec5ed5)
-![Picture3](https://github.com/ndyduc/Crypto_wallet/assets/121474243/50d68b86-c8d8-4016-bb02-f0cff09ce14d)
-![Picture4](https://github.com/ndyduc/Crypto_wallet/assets/121474243/7eced389-4823-4e58-b8fd-d45af2f043c5)
-![Picture5](https://github.com/ndyduc/Crypto_wallet/assets/121474243/46e94cf7-298d-4816-a2bf-991fa70da541)
-![Picture6](https://github.com/ndyduc/Crypto_wallet/assets/121474243/cd8900e6-2990-4778-83b7-d3ecf70f2f0d)
-![Picture8](https://github.com/ndyduc/Crypto_wallet/assets/121474243/1de3e0e6-9a16-4e32-a508-9af89a7bc73d)
-![Picture7](https://github.com/ndyduc/Crypto_wallet/assets/121474243/03feb2ec-24ba-4ffc-a495-eb41fa3e7e8d)
+<div align="center" style="display: flex; justify-content: center; gap: 100px;">
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/b20bce7a-9ee2-4f2a-a5ec-458424f4269c" alt="Picture1" width="300"/>
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/7f05ebe3-c433-4bbf-a1ba-8641ddec5ed5" alt="Picture2" width="300"/>
+</div>
+
+<div align="center" style="display: flex; justify-content: center; gap: 100px;">
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/50d68b86-c8d8-4016-bb02-f0cff09ce14d" alt="Picture1" width="300"/>
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/7eced389-4823-4e58-b8fd-d45af2f043c5" alt="Picture1" width="300"/>
+</div>
+<div align="center" style="display: flex; justify-content: center; gap: 100px;">
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/46e94cf7-298d-4816-a2bf-991fa70da541" alt="Picture1" width="300"/>
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/cd8900e6-2990-4778-83b7-d3ecf70f2f0d" alt="Picture1" width="300"/>
+</div>
+<div align="center" style="display: flex; justify-content: center; gap: 100px;">
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/1de3e0e6-9a16-4e32-a508-9af89a7bc73d" alt="Picture1" width="300"/>
+    <img src="https://github.com/ndyduc/Crypto_wallet/assets/121474243/03feb2ec-24ba-4ffc-a495-eb41fa3e7e8d" alt="Picture1" width="300"/>
+</div>
