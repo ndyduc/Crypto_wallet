@@ -42,19 +42,9 @@
                             app:srcCompat="@drawable/vnflag" />
 
                         <Space
-                            android:layout_width="207dp"
+                            android:layout_width="303dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1" />
-
-                        <ImageButton
-                            android:id="@+id/btninfor"
-                            android:layout_width="36dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:backgroundTint="#00FFFFFF"
-                            android:contentDescription="Information"
-                            android:paddingRight="15dp"
-                            app:srcCompat="@drawable/bell" />
 
                     </LinearLayout>
 
@@ -113,7 +103,7 @@
                             android:layout_marginRight="40dp"
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
-                            android:inputType="text|textPersonName"
+                            android:inputType="number"
                             android:textColor="@color/white" />
                     </LinearLayout>
 
@@ -160,7 +150,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textViewForgotPassword"
+                        android:id="@+id/btnforgot"
                         android:layout_width="wrap_content"
                         android:layout_height="31dp"
                         android:layout_marginLeft="245dp"
@@ -217,21 +207,21 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/maininfor" />
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/maininfor" />
-        </LinearLayout>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

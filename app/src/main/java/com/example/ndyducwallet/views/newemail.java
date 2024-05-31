@@ -1,4 +1,4 @@
-package com.example.ndyducwallet;
+package com.example.ndyducwallet.views;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ndyducwallet.R;
 
 public class newemail extends AppCompatActivity {
     private ImageButton btnback,btninfor;

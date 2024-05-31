@@ -52,7 +52,8 @@
                         android:layout_weight="1"
                         android:backgroundTint="#00FFFFFF"
                         android:paddingRight="15dp"
-                        app:srcCompat="@drawable/bell" />
+                        app:srcCompat="@drawable/bell"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                 </LinearLayout>
 
@@ -67,21 +68,22 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_weight="1"
-                        android:fontFamily="@font/fredokaone"
+                        android:fontFamily="sans-serif-medium"
                         android:text="Welcome"
                         android:textColor="@color/white"
                         android:textSize="35sp" />
 
                     <TextView
-                        android:id="@+id/textView4"
+                        android:id="@+id/txtusername"
                         android:layout_width="216dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/fraunces_medium"
                         android:gravity="center|left"
-                        android:text="Nguyễn Duy Đức"
+                        android:text=" "
                         android:textColor="#FFFFFF"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -114,14 +116,14 @@
                             android:id="@+id/textView15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-medium"
+                            android:fontFamily="@font/fredokaone"
                             android:paddingLeft="20dp"
-                            android:text="Wallet ID"
+                            android:text="_ndyduc_ ID"
                             android:textColor="@color/white"
                             android:textSize="26sp" />
 
                         <LinearLayout
-                            android:layout_width="261dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
@@ -131,7 +133,7 @@
                                 android:layout_height="40dp"
                                 android:layout_marginLeft="25dp"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/francois_one"
+                                android:fontFamily="@font/fraunces_medium"
                                 android:gravity="center_vertical"
                                 android:text="1014264864"
                                 android:textColor="#fff"
@@ -143,7 +145,8 @@
                                 android:layout_height="40dp"
                                 android:layout_weight="1"
                                 android:backgroundTint="#00FFFFFF"
-                                app:srcCompat="@drawable/copy" />
+                                app:srcCompat="@drawable/copy"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                             <Space
                                 android:layout_width="wrap_content"
@@ -152,7 +155,7 @@
                         </LinearLayout>
 
                         <LinearLayout
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="horizontal">
 
@@ -168,22 +171,23 @@
 
                             <TextView
                                 android:id="@+id/textView17"
-                                android:layout_width="wrap_content"
+                                android:layout_width="127dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
                                 android:fontFamily="@font/fraunces_medium"
                                 android:gravity="center"
                                 android:text="******"
                                 android:textColor="@color/white"
                                 android:textSize="22sp" />
 
-                            <Switch
-                                android:id="@+id/switch1"
+                            <ImageView
+                                android:id="@+id/eye"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="-8dp"
-                                android:thumb="@drawable/eyeswitch" />
+                                android:layout_gravity="center_vertical"
+                                android:clickable="true"
+                                android:onClick="toggleSwitchState"
+                                android:src="@drawable/eye_fill"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                         </LinearLayout>
                     </LinearLayout>
@@ -202,7 +206,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/fredokaone"
                         android:paddingLeft="25dp"
-                        android:text="Transfer"
+                        android:text="Transation"
                         android:textColor="#e1f1ff"
                         android:textSize="24sp" />
 
@@ -222,7 +226,7 @@
                             android:layout_marginEnd="5dp"
                             android:backgroundTint="#39212121"
                             android:drawableTop="@drawable/u_exchange_alt"
-                            android:text="Transation"
+                            android:text="Transfer"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
                             android:textSize="14sp"
@@ -326,7 +330,7 @@
                         android:layout_marginBottom="15dp"
                         android:fontFamily="@font/fredokaone"
                         android:paddingLeft="25dp"
-                        android:text="Top stories"
+                        android:text="Top news"
                         android:textColor="#e1f1ff"
                         android:textSize="24sp" />
 
@@ -336,239 +340,86 @@
                         android:background="@drawable/textbg">
 
                         <LinearLayout
+                            android:id="@+id/mum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
                             android:orientation="vertical"
                             android:paddingTop="10dp">
 
-                            <LinearLayout
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/remum"
                                 android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="439dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/textView52"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="55dp"
-                                        android:text="TextView"
-                                        android:textColor="#e1f1ff" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="23dp"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/textView22"
-                                            android:layout_width="250dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView20"
-                                            android:layout_width="10dp"
-                                            android:layout_height="match_parent"
-                                            android:text="."
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView19"
-                                            android:layout_width="198dp"
-                                            android:layout_height="match_parent"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-                                    </LinearLayout>
-                                </LinearLayout>
-
-                                <ImageView
-                                    android:id="@+id/imageView2"
-                                    android:layout_width="272dp"
-                                    android:layout_height="80dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/profile" />
-
-                            </LinearLayout>
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:orientation="horizontal">
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:visibility="gone">
 
                                 <LinearLayout
-                                    android:layout_width="439dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="23dp"
+                                    android:orientation="horizontal">
 
                                     <TextView
-                                        android:id="@+id/textView21"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="55dp"
-                                        android:text="TextView"
+                                        android:id="@+id/newstime"
+                                        android:layout_width="90dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:text="April 25, 2024"
+                                        android:textColor="#e1f1ff"
+                                        android:textSize="14dp"
+                                        tools:ignore="TextSizeCheck" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="  .  "
                                         android:textColor="#e1f1ff" />
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="23dp"
-                                        android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/title"
+                                        android:layout_width="272dp"
+                                        android:layout_height="match_parent"
+                                        android:ellipsize="end"
+                                        android:maxLines="1"
+                                        android:text="Samourai Wallet Charges Raise Existential Questions for Privacy Tech"
+                                        android:textColor="#e1f1ff"
+                                        android:textSize="16dp" />
 
-                                        <TextView
-                                            android:id="@+id/textView28"
-                                            android:layout_width="250dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView29"
-                                            android:layout_width="10dp"
-                                            android:layout_height="match_parent"
-                                            android:text="."
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView53"
-                                            android:layout_width="198dp"
-                                            android:layout_height="match_parent"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-                                    </LinearLayout>
                                 </LinearLayout>
-
-                                <ImageView
-                                    android:id="@+id/imageView4"
-                                    android:layout_width="272dp"
-                                    android:layout_height="80dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/profile" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:orientation="horizontal">
 
                                 <LinearLayout
-                                    android:layout_width="439dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
                                     android:layout_weight="1"
-                                    android:orientation="vertical">
+                                    android:orientation="horizontal">
 
                                     <TextView
-                                        android:id="@+id/textView54"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="55dp"
-                                        android:text="TextView"
-                                        android:textColor="#e1f1ff" />
+                                        android:id="@+id/content"
+                                        android:layout_width="240dp"
+                                        android:layout_height="80dp"
+                                        android:text="Co-founders Keonne Rodriguez and William Lonergan Hill are charged with money laundering related to the privacy-protecting wallet."
+                                        android:textColor="#e1f1ff"
+                                        android:textSize="14dp"
+                                        tools:ignore="TextSizeCheck" />
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="23dp"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/textView31"
-                                            android:layout_width="250dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView32"
-                                            android:layout_width="10dp"
-                                            android:layout_height="match_parent"
-                                            android:text="."
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView34"
-                                            android:layout_width="198dp"
-                                            android:layout_height="match_parent"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-                                    </LinearLayout>
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="120dp"
+                                        android:layout_height="80dp"
+                                        android:scaleType="fitXY"
+                                        app:srcCompat="@drawable/profile" />
                                 </LinearLayout>
-
-                                <ImageView
-                                    android:id="@+id/imageView5"
-                                    android:layout_width="272dp"
-                                    android:layout_height="80dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/profile" />
-
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:layout_marginBottom="10dp"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="439dp"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:id="@+id/textView35"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="55dp"
-                                        android:text="TextView"
-                                        android:textColor="#e1f1ff" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="23dp"
-                                        android:orientation="horizontal">
-
-                                        <TextView
-                                            android:id="@+id/textView36"
-                                            android:layout_width="250dp"
-                                            android:layout_height="match_parent"
-                                            android:layout_weight="1"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView37"
-                                            android:layout_width="10dp"
-                                            android:layout_height="match_parent"
-                                            android:text="."
-                                            android:textColor="#e1f1ff" />
-
-                                        <TextView
-                                            android:id="@+id/textView38"
-                                            android:layout_width="198dp"
-                                            android:layout_height="match_parent"
-                                            android:text="TextView"
-                                            android:textColor="#e1f1ff" />
-                                    </LinearLayout>
-                                </LinearLayout>
-
-                                <ImageView
-                                    android:id="@+id/imageView3"
-                                    android:layout_width="272dp"
-                                    android:layout_height="80dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/profile" />
-
-                            </LinearLayout>
                         </LinearLayout>
                     </ScrollView>
                 </LinearLayout>
@@ -594,7 +445,8 @@
                 android:backgroundTint="#00FFFFFF"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                app:srcCompat="@drawable/house_door_fill" />
+                app:srcCompat="@drawable/house_door_fill"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Space
                 android:layout_width="30dp"
@@ -610,7 +462,8 @@
                 android:backgroundTint="#00FFFFFF"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                app:srcCompat="@drawable/uarrowgrow" />
+                app:srcCompat="@drawable/uarrowgrow"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Space
                 android:layout_width="30dp"
@@ -626,7 +479,8 @@
                 android:backgroundTint="#00FFFFFF"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                app:srcCompat="@drawable/wallet" />
+                app:srcCompat="@drawable/wallet"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Space
                 android:layout_width="30dp"
@@ -642,7 +496,8 @@
                 android:backgroundTint="#00FFFFFF"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
-                app:srcCompat="@drawable/person" />
+                app:srcCompat="@drawable/person"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
     </RelativeLayout>

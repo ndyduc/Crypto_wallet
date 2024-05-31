@@ -46,15 +46,6 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1" />
 
-                        <ImageButton
-                            android:id="@+id/btninfor"
-                            android:layout_width="16dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:backgroundTint="#00FFFFFF"
-                            android:paddingRight="15dp"
-                            app:srcCompat="@drawable/bell" />
-
                     </LinearLayout>
 
                     <TextView
@@ -96,14 +87,13 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/editTextusername"
+                            android:id="@+id/txtusername"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
-                            android:hint="Enter yours name"
                             android:inputType="textCapWords"
                             android:paddingLeft="15dp" />
                     </LinearLayout>
@@ -125,14 +115,13 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/editphone"
+                            android:id="@+id/txtphone"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
-                            android:hint="@string/enter_phone_number"
                             android:inputType="number"
                             android:paddingLeft="15dp" />
                     </LinearLayout>
@@ -154,14 +143,13 @@
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/editemail"
+                            android:id="@+id/txtemail"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:layout_marginLeft="40dp"
                             android:layout_marginRight="40dp"
                             android:backgroundTint="#FFFFFF"
                             android:ems="10"
-                            android:hint="@string/Enteremail"
                             android:inputType="textEmailAddress"
                             android:paddingLeft="15dp" />
                     </LinearLayout>
@@ -194,13 +182,12 @@
                                 android:layout_marginLeft="40dp"
                                 android:backgroundTint="#FFFFFF"
                                 android:ems="10"
-                                android:hint="@string/enter_your_password"
                                 android:inputType="textPassword"
                                 android:paddingLeft="15dp"
                                 android:textColor="@color/white" />
 
                             <ImageView
-                                android:id="@+id/eyeswitch1"
+                                android:id="@+id/eye"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -240,7 +227,6 @@
                                 android:layout_height="58dp"
                                 android:layout_marginLeft="40dp"
                                 android:ems="10"
-                                android:hint="@string/retype_password"
                                 android:backgroundTint="#FFFFFF"
                                 android:inputType="textPassword"
                                 android:paddingLeft="15dp"

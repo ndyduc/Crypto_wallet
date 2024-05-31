@@ -1,4 +1,4 @@
-package com.example.ndyducwallet;
+package com.example.ndyducwallet.views;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.NestedScrollView;
+
+import com.example.ndyducwallet.R;
 
 public class Transfer extends AppCompatActivity {
     private ImageButton btnmess, btnwli, btnback,btninfor;

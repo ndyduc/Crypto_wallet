@@ -16,6 +16,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -29,6 +30,14 @@ android {
 }
 
 dependencies {
+    implementation ("com.google.code.gson:gson:2.8.8")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.picasso:picasso:2.71828")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.1")
+    implementation ("com.fasterxml.jackson.core:jackson-databind:2.12.5")
+    implementation ("org.jsoup:jsoup:1.14.3")
 
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -43,4 +52,3 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
 }
-

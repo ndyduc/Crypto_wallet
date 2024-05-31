@@ -1,2 +1,4 @@
-package com.example.ndyducwallet.views;public class Bill_Activity {
+package com.example.ndyducwallet.views;
+
+public class Bill_Activity {
 }

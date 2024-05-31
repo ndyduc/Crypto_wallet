@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ScrollView
             android:layout_width="412dp"
@@ -86,13 +86,12 @@
                     android:textSize="22sp" />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/txtemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/forum"
                     android:gravity="center"
-                    android:text="duc20021118@gmail.com"
                     android:textColor="#fff"
                     android:textSize="18dp" />
 
@@ -189,7 +188,7 @@
 
                     <TextView
                         android:id="@+id/textView18"
-                        android:layout_width="wrap_content"
+                        android:layout_width="157dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="right"
@@ -198,12 +197,12 @@
                         android:textColor="@color/white" />
 
                     <TextView
-                        android:id="@+id/textView23"
-                        android:layout_width="0dp"
+                        android:id="@+id/btnresend"
+                        android:layout_width="7dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:shadowColor="@color/maincolor"
-                        android:text="Send again" />
+                        android:text="Send again"
+                        android:textColor="@color/maincolor" />
 
                 </LinearLayout>
 

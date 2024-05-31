@@ -33,7 +33,7 @@
                 android:padding="20dp">
 
                 <TextView
-                    android:id="@+id/textView24"
+                    android:id="@+id/txttitle"
                     android:layout_width="360dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
